@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大港明體 The Great Habor Font</title>
+    <link rel="shortcut icon" href="images/dog07.png">
+    <meta property="og:title" content="大港明體 The Great Habor Font" />
+    <meta property="og:description" content="依山傍海，因港而生">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="＃" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header id="myHeader" class="header">
+  <nav>
+    <a href="#home" class="fw-bold"><span class="a-hover">大港明體</span></a>
+    <a href="#story" class="fw-bold"><span class="a-hover">設計故事</span></a>
+    <a href="#mockup" class="fw-bold"><span class="a-hover">應用範例</span></a>
+    <button id="openmenu" class="navbutton">
+      <span class="navspan"></span>
+      <span class="navspan"></span>
+    </button>
+  </nav>
+</header>
+
+<div id="page" class="bg-info" style="background-image:url(./images/bg-01.png); background-size: contain; background-repeat: no-repeat;">
+  <section id="home" class="container position-relative headline mb-7">
+        <img src="images/headline.png" class="d-none d-lg-block w-50 position-absolute bottom-0 start-10" alt="headline">
+        <img src="images/headline.png" class="d-block d-lg-none w-75 position-absolute top-50 start-12" alt="headline">
+  </section>
+  <section id="story" class="container pt-6">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-7 mt-3 mb-5">
+        <img src="images/02.svg" class="img-fluid" alt="title2">
+      </div>
+      <div class="col-12 col-lg-7">
+        <img src="images/03.svg" class="img-fluid" alt="">
+      </div>
+      <div class="col-12 col-lg-7">
+        <img src="images/04.svg" class="img-fluid" alt="">
+      </div>
+      <div class="col-12 col-lg-7">
+        <img src="images/05.svg" class="img-fluid mb-5" alt="">
+      </div>
+      <div class="col-12 col-lg-7">
+        <img src="images/06.svg" class="img-fluid mb-5" alt="">
+      </div>
+    </div>
+    <div class="d-flex justify-content-center py-8" style="background-image: url(images/07.svg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+        <div class="card bg-transparent border-0" style="width: 6rem;">
+        <img src="images/08.svg" class="img-fluid px-3 py-4" alt="">
+        <a href="#" class="btn btn-outline-primary border-2 fw-bold rounded rounded-pill p-2">其他明體</a>
+        </div>
+    </div>
+  </div>
+  </section>
+  <section id="mockup" class="vh-100">
+    <h1>Space.</h1>
+  </section>
+  <section id="contact" class="vh-100">
+    <h1>Future.</h1>
+  </section>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+          var header = document.getElementById('myHeader');
+          var page = document.getElementById('page');
+          var openMenuButton = document.getElementById('openmenu');
+
+          window.addEventListener('scroll', function() {
+              page.classList.remove('menuopen');
+              if (window.scrollY >= 100) {
+                  header.classList.add('sticky');
+              } else {
+                  header.classList.remove('sticky');
+              }
+          });
+
+          // Event listener to remove the sticky class when the button is clicked
+          openMenuButton.addEventListener('click', function() {
+              header.classList.remove('sticky');
+              page.classList.add('menuopen');
+          });
+        
+        var links = document.querySelectorAll('a[href^="#"]');
+
+          links.forEach(function(link) {
+              link.addEventListener('click', function(event) {
+                  // Prevent the default action
+                  event.preventDefault();
+
+                  // Get the target element
+                  var targetId = this.getAttribute('href');
+                  var targetElement = document.querySelector(targetId);
+
+                  // Smooth scroll to target
+                  if (targetElement) {
+                      targetElement.scrollIntoView({
+                          behavior: 'smooth'
+                      });
+                  }
+              });
+          });
+      });
+
+
+    </script>
+
+  </body>
+</html>
