@@ -1,0 +1,21 @@
+.box { 
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    left: 0px;
+    display:flex;
+    position: absolute;
+}
+.photo{
+    height: 400px;
+    margin-left: 2px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

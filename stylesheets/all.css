@@ -11752,7 +11752,7 @@ header.sticky nav a {
 }
 
 .bg {
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -11774,8 +11774,37 @@ header.sticky nav a {
     height: 500px;
   }
 }
+.footer-link :hover {
+  opacity: 70%;
+  transition: all 0.25s;
+}
+
 .quote {
   border-right: 0.5rem solid;
   color: #5B8B8F;
   margin-right: 1rem;
+}
+
+.box {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  left: 0px;
+  display: flex;
+  position: absolute;
+}
+
+.photo {
+  height: 400px;
+  margin-left: 2px;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=all.css.map */

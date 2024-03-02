@@ -128,7 +128,7 @@ header.sticky {
 
 
 .bg{
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -154,5 +154,12 @@ header.sticky {
 
     .headline{
         height: 500px;
+    }
+}
+
+.footer-link{
+    :hover{
+        opacity: 70%;
+        transition: all .25s;
     }
 }
