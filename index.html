@@ -41,34 +41,36 @@
         <img src="images/headline.png" class="img-fluid pt-8" alt="headline">
   </section>
 
-  <section id="story" class="container">
-    <div class="row px-lg-5 pt-8 mb-8">
-      <div class="col-12 col-lg-10 mb-5 mb-lg-6">
-        <img src="images/02.svg" class="img-fluid" alt="">
-      </div>
-      <div class="col-12 ">
-        <img src="images/03.svg" class="img-fluid" alt="">
-      </div>
-      <div class="col-12">
-        <img src="images/04.svg" class="img-fluid" alt="">
-      </div>
-      <div class="col-12">
-        <img src="images/05.svg" class="img-fluid mb-5" alt="">
-      </div>
-      <div class="col-12 col-lg-10">
-        <img src="images/06.svg" class="img-fluid mb-3" alt="">
+  <section id="story">
+    <div class="container">
+      <div class="row px-lg-5 pt-8">
+        <div class="col-12 col-lg-10 mb-5 mb-lg-6">
+          <img src="images/02.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-12 ">
+          <img src="images/03.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-12">
+          <img src="images/04.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-12">
+          <img src="images/05.svg" class="img-fluid mb-5" alt="">
+        </div>
+        <div class="col-12 col-lg-10">
+          <img src="images/06.svg" class="img-fluid" alt="">
+        </div>
       </div>
     </div>
-    <div class="d-flex justify-content-center pt-8 pb-5 mb-8" style="background-image: url(images/07.svg); background-size: 100%; background-repeat: no-repeat; background-position: center center;">
-      <div class="card bg-transparent border-0" style="width: 6rem;">
-      <img src="images/08.svg" class="img-fluid px-3 py-4" alt="">
-      <a href="#" class="btn btn-outline-primary border-2 fw-bold rounded rounded-pill p-2">其他明體</a>
-    </div>
+    <div class="container-fluid">
+      <div class="my-6 py-8 bg-contain" style="background-image: url(images/bg-03.png);">
+        </div>
+      </div>
+
 
   </section>
 
-  <section style="background-image: url(images/200-bg.png); background-size: cover; background-repeat: no-repeat; background-position: center center;">
-    <div class="container-fluid py-8 mb-5">
+  <section class="bg-cover mb-5" style="background-image: url(images/200-bg.png);">
+    <div class="container-fluid py-8 mb-6">
       <div class="box">
         <div class="list">
           <div class="photo">
@@ -86,14 +88,9 @@
   </section>
 
   <section id="mockup" class="container mb-6">
-    <div class="row mb-5">
-      <div class="col-8 col-lg-4">
-        <img src="images/title2-2.svg" class="img-fluid" alt="">
-      </div>
-    </div>
     <div class="row g-3">
       <div class="col-8">
-      <img src="images/mock-1.png" class="img-fluid " alt="">
+      <img src="images/mock-1.png" class="img-fluid" alt="">
       </div>
       <div class="col-4">
         <div class="row g-3">
@@ -129,7 +126,19 @@
     </div>
   </section>
 
-  <footer class="container-fluid pt-8 pb-4" style="background-image: url(images/footer.png); background-size: cover; background-repeat: no-repeat;">
+  <footer class="container-fluid pt-8 pb-3 bg-cover d-none d-md-block" style="background-image: url(images/footer.png);">
+    <div class="container d-lg-flex justify-content-lg-between align-items-lg-end">
+      <div class="mb-3 mb-lg-0">
+      <a href="mailto:pingpong222@gmail.com" class="fs-4 nav-link link-white fw-bold lh-lg footer-link" ># 聯絡我們</a>
+      <a href="mailto:pingpong222@gmail.com" class="nav-link link-white fw-bold lh-lg footer-link" >創作者｜彭怡華、鄧品然</a>
+      <a href="mailto:pingpong222@gmail.com" class="nav-link link-white fw-bold lh-lg footer-link" >信箱｜pingpong222@gmail.com</a>
+      </div>
+      <div class="pb-2">
+        <a href="#home" class="footer-link"><img src="images/footer-logo.svg" alt=""></a>
+      </div>
+  </footer>
+
+  <footer class="container-fluid pt-8 pb-3 bg-cover d-block d-md-none" style="background-image: url(images/footer-rwd.png);">
     <div class="container d-lg-flex justify-content-lg-between align-items-lg-end">
       <div class="mb-3 mb-lg-0">
       <a href="mailto:pingpong222@gmail.com" class="fs-4 nav-link link-white fw-bold lh-lg footer-link" ># 聯絡我們</a>
@@ -221,5 +230,6 @@
         };
         document.addEventListener('DOMContentLoaded',load);
     </script>
+    
   </body>
 </html>
