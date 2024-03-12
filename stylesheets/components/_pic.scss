@@ -1,0 +1,13 @@
+.pic{
+    :hover{
+        transform: scale(1.02);
+        transition: ease-in-out .3s;
+    }
+} 
+
+.pic-sm{
+    :hover{
+        transform: scale(1.04);
+        transition: ease-in-out .3s;
+    }
+} 

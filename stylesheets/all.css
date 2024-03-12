@@ -12339,10 +12339,14 @@ header.sticky nav a {
   transition: all 0.25s;
 }
 
-.quote {
-  border-right: 0.5rem solid;
-  color: #63989d;
-  margin-right: 1rem;
+.pic :hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.3s;
+}
+
+.pic-sm :hover {
+  transform: scale(1.04);
+  transition: ease-in-out 0.3s;
 }
 
 .box {
